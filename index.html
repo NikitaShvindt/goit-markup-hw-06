@@ -432,7 +432,7 @@
           <div class="form-field">
             <label for="">Пошта</label>
             <input type="email" name="mail" class="user-mail" />
-            <svg width="18" height="18" class="mail">
+            <svg width="18" height="18" class="modal-mail">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
@@ -447,10 +447,11 @@
             ></textarea>
           </div>
 
-          <div>
-            <input type="checkbox" name="poli" />
-            <label for="" class="policy"
-              >Погоджуюся з розсилкою та приймаю
+          <div class="modal-policy">
+            <label for="" class="policy">
+              <input class="checkbox" type="checkbox" name="poli" />
+              <span class="icon-check"></span>
+              Погоджуюся з розсилкою та приймаю
               <span class="policy-blue">Умови договору</span></label
             >
           </div>

@@ -866,6 +866,47 @@ span.logo-footer {
   pointer-events: none;
 }
 
+.modal-policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check {
+  display: flex;
+  border: 2px solid rgba(7, 7, 7, 0.87);
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.icon-check {
+  width: 16px;
+  height: 15px;
+
+  margin-right: 8px;
+
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.checkbox:checked + .icon-check {
+  border-color: transparent;
+  background-color: #2196f3;
+  background-image: url(../images/modal-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
 /* modal-icon */
 
 .form-field:hover {
@@ -914,7 +955,7 @@ span.logo-footer {
   position: relative;
 }
 
-.mail {
+.modal-mail {
   position: absolute;
   top: 260px;
   left: 52px;
@@ -993,6 +1034,8 @@ textarea {
 }
 
 .policy {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 1.71;
 
