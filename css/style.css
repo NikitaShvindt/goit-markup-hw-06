@@ -931,40 +931,44 @@ span.logo-footer {
   border-color: #2196f3;
 }
 
+.modal-input-wrapper {
+  position: relative;
+}
+
 .user-name {
   height: 40px;
   outline: none;
-  position: relative;
 }
 
 .person {
   position: absolute;
-  top: 105px;
-  left: 52px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
 }
 
 .user-tel {
   height: 40px;
   outline: none;
-  position: relative;
 }
 
 .telefon {
   position: absolute;
-  top: 174px;
-  left: 52px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
 }
 
 .user-mail {
   height: 40px;
   outline: none;
-  position: relative;
 }
 
 .modal-mail {
   position: absolute;
-  top: 241px;
-  left: 52px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
 }
 
 /* modal-form */
@@ -974,6 +978,7 @@ textarea {
 }
 
 .form-field input {
+  width: 100%;
   margin: 0;
   padding: 14px 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
