@@ -1055,6 +1055,15 @@ textarea {
   color: #757575;
 }
 
+.policy-blue {
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: #2196f3;
+}
 .modal-icon-check {
   width: 16px;
   height: 15px;
