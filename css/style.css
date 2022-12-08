@@ -889,24 +889,6 @@ span.logo-footer {
   overflow: hidden;
 }
 
-.icon-check {
-  width: 16px;
-  height: 15px;
-
-  margin-right: 8px;
-
-  border: 2px solid #212121;
-  border-radius: 2px;
-}
-
-.checkbox:checked + .icon-check {
-  border-color: transparent;
-  background-color: #2196f3;
-  background-image: url(../images/modal-check.svg);
-  background-size: contain;
-  background-origin: border-box;
-}
-
 /* modal-icon */
 
 .form-field:hover {
@@ -915,20 +897,32 @@ span.logo-footer {
 
 .user-name:hover,
 .user-name:focus {
-  cursor: pointer;
   border-color: #2196f3;
+}
+
+.user-name:focus + svg,
+.user-name:hover + svg {
+  fill: #2196f3;
 }
 
 .user-mail:hover,
 .user-mail:focus {
-  cursor: pointer;
   border-color: #2196f3;
+}
+
+.user-mail:focus + svg,
+.user-mail:hover + svg {
+  fill: #2196f3;
 }
 
 .user-tel:hover,
 .user-tel:focus {
-  cursor: pointer;
   border-color: #2196f3;
+}
+
+.user-tel:focus + svg,
+.user-tel:hover + svg {
+  fill: #2196f3;
 }
 
 .modal-input-wrapper {
@@ -945,6 +939,7 @@ span.logo-footer {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-tel {
@@ -957,6 +952,7 @@ span.logo-footer {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-mail {
@@ -969,6 +965,7 @@ span.logo-footer {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* modal-form */
@@ -983,6 +980,7 @@ textarea {
   padding: 14px 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field textarea {
@@ -1057,12 +1055,25 @@ textarea {
   color: #757575;
 }
 
-.policy-blue {
-  font-size: 14px;
-  line-height: 1.71;
+.modal-icon-check {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  cursor: pointer;
+}
 
-  letter-spacing: 0.03em;
-  text-decoration-line: underline;
+.modal-icon-check svg {
+  fill: transparent;
+}
 
-  color: #2196f3;
+.checkbox:checked + label > span {
+  border: none;
+  background-color: #2196f3;
+}
+
+.checkbox:checked + label > span svg {
+  fill: #ffffff;
 }
